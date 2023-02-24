@@ -1,0 +1,17 @@
+html {
+    background-color: black;
+    background-image: url(https://lh6.googleusercontent.com/proxy/-RRmAOTw21X-eE6-QJ5N6q6arkabcaaB-klurWxclO45sY35OPuPC1PpJy3n0fGIH0qb3dIA7FUqiRAWrdH3VrkF9VMetIuthsq2M5g3hazOvST0f4Js49xvQeU6=w3840-h2160-p-k-no-nd-mv);
+    background-size: auto auto;
+    background-repeat: no-repeat;
+}
+
+.name {
+    color: white;
+    /* width: 50px;
+    height: 50px; */
+    position: fixed; /* or absolute */
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
