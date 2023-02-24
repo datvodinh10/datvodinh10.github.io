@@ -1,5 +1,5 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-document.querySelector("h1").onmousemove = event => {
+document.querySelector("h1").onmouseover = event => {
     let iterations = 0;
 
     const interval = setInterval(() => {
