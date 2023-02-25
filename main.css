@@ -1,19 +1,59 @@
 html {
     background-color: black;
-    background-image: url(https://lh6.googleusercontent.com/proxy/-RRmAOTw21X-eE6-QJ5N6q6arkabcaaB-klurWxclO45sY35OPuPC1PpJy3n0fGIH0qb3dIA7FUqiRAWrdH3VrkF9VMetIuthsq2M5g3hazOvST0f4Js49xvQeU6=w3840-h2160-p-k-no-nd-mv);
-    background-size: auto auto;
+    /* background-image: url(https://lh6.googleusercontent.com/proxy/-RRmAOTw21X-eE6-QJ5N6q6arkabcaaB-klurWxclO45sY35OPuPC1PpJy3n0fGIH0qb3dIA7FUqiRAWrdH3VrkF9VMetIuthsq2M5g3hazOvST0f4Js49xvQeU6=w3840-h2160-p-k-no-nd-mv); */
+    background-size: auto;
     background-repeat: no-repeat;
+}
+
+
+@keyframes rotate{
+    from {
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 1 1.5;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
+
+/* #blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(200px);
+} */
+
+#blob{
+   background-color: white;
+   height: 300px;
+   aspect-ratio: 1;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   translate: -50% -50%;
+   border-radius: 50%;
+   background: linear-gradient(
+    to right,
+    aquamarine,
+    mediumpurple
+    );
+    animation: rotate 20s infinite;
+    filter: blur(100px);
 }
 
 .name {
     color: white;
     /* width: 50px;
     height: 50px; */
-    font-size: 6rem;
+    font-size: 7rem;
     font-family: "Space Mono", monospace;
-    position: fixed; /* or absolute */
-    top: 40%;
+    position: absolute; /* or absolute */
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
-

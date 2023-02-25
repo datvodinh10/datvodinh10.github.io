@@ -17,3 +17,13 @@ document.querySelector("h1").onmouseover = event => {
         iterations+=1/3
     }, 30);
 }
+
+const blob = document.getElementById("blob");
+
+document.body.onpointermove = event => {
+    const {clientX,clientY } = event;
+    blob.animate({
+        left : `${clientX}px`,
+        top : `${clientY}px`
+    }, {duration: 3000,fill: "forwards"})
+}
